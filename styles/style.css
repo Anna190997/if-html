@@ -1,29 +1,29 @@
-.header{
-    width: 1440px;
-    height: 569px;
+.header {
+  width: 1440px;
+  height: 569px;
 }
-.text{
-    padding: 120px 567px 0 567px;
-    font-size: 40px;
+.text {
+  padding: 120px 567px 0 567px;
+  font-size: 40px;
 }
-hr{
-    width: 100px;
-    height: 4px;
-    margin-top: 20px;
-    background-color: #F5BD41;
+hr {
+  width: 100px;
+  height: 4px;
+  margin-top: 20px;
+  background-color: #f5bd41;
 }
-.wrapper{
-    margin-top: 88px;
-    margin-left: 181px;
+.wrapper {
+  margin-top: 88px;
+  margin-left: 181px;
 }
-.block{
-    display: inline-block;
-    float: left;
-    width: 22%;
-    text-align: center;
+.block {
+  display: inline-block;
+  float: left;
+  width: 22%;
+  text-align: center;
 }
-.text_offer{
-    padding-top: 48px;
-    font-size: 24px;
-    color: #383838;
+.text_offer {
+  padding-top: 48px;
+  font-size: 24px;
+  color: #383838;
 }
