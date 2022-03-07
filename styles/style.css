@@ -43,7 +43,7 @@ hr {
 /*Footer styles*/
 .footer {
   width: 1440px;
-  height: 494px;
+  height: 630px;
   background-color: #10367c;
   display: flex;
 }
@@ -96,9 +96,8 @@ a:hover {
   margin-bottom: 389px;
 }
 .label {
-  width: 1440px;
-  height: 136px;
-  background-color: #10367c;
+  position: absolute;
+  margin-top: 494px;
 }
 .label_items {
   margin-left: 103px;
