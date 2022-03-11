@@ -8,13 +8,15 @@
   src: url("../about/fonts/Roboto-Regular.woff") format("woff");
 }
 .header {
-  width: 1440px;
-  height: 569px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 .text {
-  font-family: Roboto-Medium;
+  font-family: Roboto;
   font-style: normal;
-  padding: 120px 567px 0 567px;
+  padding-top: 120px;
+  text-align: center;
   font-size: 40px;
 }
 hr {
@@ -24,8 +26,11 @@ hr {
   background-color: #f5bd41;
 }
 .wrapper {
-  margin-top: 88px;
-  margin-left: 181px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 120px;
+  padding-top: 90px;
 }
 .block {
   display: inline-block;
@@ -42,17 +47,22 @@ hr {
 }
 /*Footer styles*/
 .footer {
-  width: 1440px;
-  height: 630px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   background-color: #10367c;
+}
+.footer_elements {
   display: flex;
-  justify-content: normal;
+  justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 104px;
+  padding-top: 120px;
 }
 .footer_items {
-  display: flex;
-  flex-direction: column;
-  margin-top: 120px;
+  display: inline-block;
+  float: left;
+  width: 30%;
 }
 .about_items,
 .property_types_items,
@@ -79,20 +89,8 @@ a:hover {
   font-family: Roboto;
   font-weight: bolder;
 }
-.about_items {
-  padding-left: 104px;
-}
-.property_types {
-  padding: 0;
-}
-.property_types_items {
-  padding-left: 223px;
-}
-.support_items {
-  padding-left: 283px;
-}
 .label {
-  padding-left: 103px;
+  padding-left: 105px;
   padding-bottom: 120px;
 }
 .label_items {
