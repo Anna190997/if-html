@@ -38,6 +38,10 @@ hr {
   width: 22%;
   text-align: center;
 }
+.images{
+  width: 100px;
+  height: 100px;
+}
 .text_offer {
   font-family: Roboto;
   font-style: normal;
@@ -100,6 +104,7 @@ a:hover {
 }
 @media screen and (max-width: 890px) {
   .text_offer {
+    padding-top: 40px;
     font-size: 20px;
   }
   .footer_elements {
@@ -136,8 +141,10 @@ a:hover {
 @media screen and (max-width: 628px) {
   .images {
     width: 80px;
+    height: 80px;
   }
   .text_offer {
+    padding-top: 30px;
     font-size: 15px;
   }
   .text {
@@ -172,9 +179,10 @@ a:hover {
   }
   .images {
     width: 60px;
+    height: 40px;
   }
   .text_offer {
-    padding-top: 35px;
+    padding-top: 15px;
     font-size: 12px;
   }
   .text {
@@ -202,9 +210,10 @@ a:hover {
   }
   .images {
     width: 40px;
+    height: 40px;
   }
   .text_offer {
-    padding-top: 25px;
+    padding-top: 10px;
     font-size: 10px;
   }
   .text {
