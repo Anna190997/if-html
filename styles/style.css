@@ -1,3 +1,21 @@
 /*Header styles*/
-
-
+@font-face {
+    font-family: Roboto;
+    src: url("./about/fonts/Roboto-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("./about/fonts/Roboto-Medium.woff") format("woff");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.block{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-image: url("../about/images/castelbackground.svg");
+    background-position: center;
+}
