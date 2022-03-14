@@ -1,28 +1,98 @@
 <!DOCTYPE html>
-<html lang="eng">
-  <head>
+<html lang="eng" xmlns="http://www.w3.org/1999/html">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Trip House</title>
-  </head>
-  <body>
-<div class="block">
-  <div class="header">
-<img class="logo" src="images/logo.svg" alt="logo">
-    <a class="header_links">
-<div class="header_text">
-  Stays
-</div>
-    </a>
-    <a class="header_links">
-    <div class="header_text">
-      Attractions
+</head>
+<body>
+<header class="block">
+    <div class="header">
+        <img class="logo" src="images/logo.svg" alt="logo" />
+        <div class="header_items">
+            <div class="links">
+                <a class="stays" href="#">Stays</a>
+                <a class="attractions" href="#">Attraction</a>
+            </div>
+            <div class="header_icons">
+                <img class="night" src="images/night.svg" alt="night" />
+                <img class="account" src="images/account.svg" alt="account" />
+            </div>
+        </div>
     </div>
-    </a>
-  </div>
-</div>
+    <div class="block_text">
+        <div class="block_text_items">
+            Discover stays<br />
+            to live, work or just relax
+        </div>
+    </div>
+    <form class="informations">
+        <label for="destination">Your destination or hotel name</label>
+        <label for="date">Check-in — Check-out</label><br />
+        <div class="informations_items">
+            <input
+                    class="destination"
+                    type="text"
+                    id="destination"
+                    placeholder="New York"
+            />
+            <input
+                    class="date"
+                    type="text"
+                    id="date"
+                    placeholder="Tue 15 Sept — Sat 19 Sept"
+            />
+            <input
+                    class="number"
+                    type="text"
+                    placeholder="2 Adults — 0 Children — 1 Room"
+            />
+            <button type="submit" class="submit">Search</button>
+        </div>
+    </form>
+    <div class="application">
+        <a href="#" class="google_link">
+            <img src="images/google-play.svg" alt="google_play" class="google"
+            /></a>
+        <a href="#" class="app_link"
+        ><img src="images/App_Store.svg" alt="app_store" class="app_store"
+        /></a>
+    </div>
+</header>
 
+<!-- <div class="header">
+  <h2 class="text">What do we offer</h2>
+  <hr />
+  <div class="wrapper">
+    <div class="block">
+      <img src="./images/support.png" alt="support" class="images" />
+      <div class="text_offer">Support 24/7</div>
+    </div>
+    <div class="block">
+      <img
+        src="./images/communicate_directly.png"
+        alt="communicate_directly"
+        class="images"
+      />
+      <div class="text_offer">Communicate directly</div>
+    </div>
+    <div class="block">
+      <img
+        src="./images/book_online.png"
+        alt="book_online"
+        class="images"
+      />
+      <div class="text_offer">Book online</div>
+    </div>
+    <div class="block">
+      <img src="./images/reviews.png" alt="reviews" class="images" />
+      <div class="text_offer">Real guest reviews</div>
+    </div>
+  </div>
+</div>-->
+</body>
+</html>
 
 
 
