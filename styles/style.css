@@ -1,4 +1,8 @@
 /*Header styles*/
+*{
+  margin: 0;
+  padding: 0;
+}
 @font-face {
   font-family: "Roboto";
   src: url("../about/fonts/Roboto-Medium.woff") format("woff");
@@ -19,11 +23,20 @@
   text-align: center;
   font-size: 40px;
 }
+.line{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 hr {
   width: 100px;
   height: 4px;
   margin-top: 20px;
   background-color: #f5bd41;
+  border: none;
+  text-align: center;
+
+
 }
 .wrapper {
   display: flex;
@@ -55,6 +68,7 @@ hr {
   width: 100%;
   margin: 0 auto;
   background-color: #10367c;
+
 }
 .footer_elements {
   display: flex;
@@ -64,6 +78,8 @@ hr {
   padding-top: 120px;
 }
 .footer_items {
+  margin: 0;
+  padding: 0;
   display: inline-block;
   float: left;
   width: 30%;
@@ -102,26 +118,6 @@ a:hover {
   font-size: 14px;
   color: #ffffff;
 }
-@media screen and (max-width: 890px) {
-  .text_offer {
-    padding-top: 40px;
-    font-size: 20px;
-  }
-  .footer_elements {
-    padding-left: 80px;
-    padding-top: 80px;
-  }
-  .about_items,
-  .property_types_items,
-  .support_items {
-    padding-top: 15px;
-    font-size: 18px;
-  }
-  .label {
-    padding-left: 80px;
-    padding-bottom: 100px;
-  }
-}
 @media screen and (max-width: 768px) {
   .footer_elements {
     padding-left: 50px;
@@ -136,6 +132,18 @@ a:hover {
   .label {
     padding-left: 50px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (max-width: 768px){
+  .images {
+    width: 90px;
+    height: 90px;
+  }
+  .text_offer {
+    font-size: 20px;
+  }
+  .label {
+    padding-bottom: 10px;
   }
 }
 @media screen and (max-width: 628px) {
@@ -165,83 +173,20 @@ a:hover {
     padding-bottom: 30px;
   }
 }
-@media screen and (max-width: 520px) {
-  .footer_elements {
-    justify-content: flex-start;
-  }
-  .about_items,
-  .property_types_items,
-  .support_items {
-    font-size: 12px;
-  }
-  .label_items {
-    font-size: 10px;
-  }
-  .images {
-    width: 60px;
-    height: 40px;
-  }
-  .text_offer {
-    padding-top: 15px;
-    font-size: 12px;
-  }
-  .text {
-    padding-top: 60px;
-    font-size: 25px;
-  }
-  .wrapper {
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-}
+
 @media screen and (max-width: 360px) {
-  .footer_elements {
-    padding-left: 5px;
-    padding-top: 20px;
-  }
-  .about_items,
-  .property_types_items,
-  .support_items {
-    padding-top: 5px;
-    font-size: 10px;
-  }
-  .label_items {
-    font-size: 7px;
-  }
-  .images {
-    width: 40px;
-    height: 40px;
-  }
-  .text_offer {
-    padding-top: 10px;
-    font-size: 10px;
-  }
-  .text {
-    padding-top: 30px;
-    font-size: 20px;
-  }
-  .wrapper {
-    padding-bottom: 40px;
-    padding-top: 40px;
-  }
-  hr {
-    width: 80px;
-    height: 3px;
-    margin-top: 20px;
-  }
-}
-@media screen and (max-width: 235px) {
   .footer_items {
     width: 60%;
+   text-align: center;
   }
   .footer_elements {
-    padding-top: 10px;
+    padding-top: 8px;
   }
   .label {
-    padding-bottom: 20px;
+    padding-bottom: 5px;
   }
   .label_items {
-    font-size: 5px;
+    font-size: 8px;
   }
   .wrapper {
     flex-direction: column;
@@ -251,11 +196,11 @@ a:hover {
   .text_offer {
     padding-top: 5px;
     padding-bottom: 10px;
-    font-size: 10px;
+    font-size: 15px;
   }
   .text {
     padding-top: 20px;
-    font-size: 15px;
+    font-size: 25px;
   }
   .wrapper {
     padding-bottom: 20px;
