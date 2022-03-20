@@ -43,6 +43,31 @@ header {
   font-size: 24px;
   text-decoration: none;
   margin-right: 24px;
+  position: relative;
+  transition-property: border-bottom;
+}
+
+.stays:after {
+  /*text-decoration: none;
+  border-bottom: 4px solid #f5bd41;*/
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+.attractions:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
 }
 .stays:hover {
   text-decoration: none;
@@ -146,17 +171,23 @@ label {
   font-family: Roboto;
   font-style: normal;
   padding-top: 120px;
+  padding-bottom: 20px;
   text-align: center;
   font-size: 40px;
 }
 .line {
-  display: flex;
-  justify-content: center;
+  position: relative;
 }
-hr {
+.line:after {
+  content: "";
+  position: absolute;
   width: 100px;
   height: 4px;
-  margin-top: 20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
   background-color: #f5bd41;
   border: none;
 }
