@@ -4,11 +4,11 @@
   padding: 0;
 }
 @font-face {
-  font-family: Roboto-Regular, sans-serif;
+  font-family: Roboto;
   src: url("../about/fonts/Roboto-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: Roboto-Medium, sans-serif;
+  font-family: Roboto;
   src: url("../about/fonts/Roboto-Medium.woff") format("woff");
 }
 .container {
@@ -152,7 +152,7 @@ label {
   text-align: center;
   font-size: 40px;
 }
-.line{
+.line {
   display: flex;
   justify-content: center;
 }
@@ -178,6 +178,75 @@ hr {
   font-size: 24px;
   color: #383838;
 }
+/*Destinations styles*/
+.destinations {
+  height: 958px;
+  background-color: #ffffff;
+}
+.change {
+  display: flex;
+  flex-direction: row;
+  margin-top: 104px;
+  margin-left: 104px;
+  margin-right: 850px;
+  height: 64px;
+  background-color: #f3f3f4;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.change_items {
+  border: none;
+  font-size: 24px;
+  font-family: Roboto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.regions {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+}
+.interest {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.change_items:hover {
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.change_items:active {
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.regions_items {
+  display: flex;
+  flex-direction: column;
+  margin-left: 104px;
+  margin-top: 64px;
+  padding-right: 50px;
+}
+.regions_for_visit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.regions_links {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 24px;
+}
+figcaption {
+  padding-top: 24px;
+}
+.view_more {
+  padding-top: 102px;
+  padding-left: 680px;
+}
+
 /*Footer styles*/
 .footer {
   background-color: #10367c;
@@ -204,11 +273,11 @@ hr {
   font-style: normal;
   color: #ffffff;
 }
-a {
+.footer_links {
   color: #ffffff;
   text-decoration: none;
 }
-a:hover {
+.footer_links:hover {
   text-decoration: none;
   border-bottom: 1px solid #447cd4;
 }
