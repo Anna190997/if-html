@@ -33,6 +33,83 @@ header {
   padding-right: 104px;
   padding-top: 50px;
 }
+.header_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.links {
+  padding-top: 5px;
+}
+.stays,
+.attractions {
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  margin-right: 24px;
+}
+.stays:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #f5bd41;
+}
+.attractions:hover {
+  text-decoration: none;
+  border-bottom: 4px solid #f5bd41;
+}
+.header_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+.night {
+  padding-right: 24px;
+}
+.block_text {
+  display: flex;
+  flex-direction: row;
+  padding-left: 104px;
+  padding-top: 200px;
+}
+.block_text_items {
+  font-family: Roboto, sans-serif;
+  font-size: 50px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.informations {
+  display: flex;
+  flex-direction: column;
+  padding-right: 104px;
+  padding-left: 104px;
+  padding-top: 100px;
+}
+.form_label {
+  display: flex;
+  flex-direction: row;
+}
+.informations_items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 64px;
+  background: #ffffff;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+.destination {
+  border: none;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  padding-left: 12px;
+}
+.date {
+  border: #ffffff;
+}
+.number {
+  border: #ffffff;
+}
 .submit {
   border: #3077c6;
   background: #3077c6;
@@ -71,8 +148,6 @@ label {
 }
 .application {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding: 120px 584px;
 }
 .title {
@@ -197,6 +272,7 @@ a:hover {
   .images {
     width: 90px;
     height: 90px;
+    fill: antiquewhite;
   }
   .text_offer {
     font-size: 20px;
