@@ -9,15 +9,21 @@
   <body>
     <header>
       <div class="header">
-        <img class="logo" src="images/logo.svg" alt="logo" />
+        <svg class="logo fill">
+          <use xlink:href="icons.svg#logo" />
+        </svg>
         <div class="header_items">
           <div class="links">
             <a class="stays" href="#">Stays</a>
             <a class="attractions" href="#">Attraction</a>
           </div>
           <div class="header_icons">
-            <img class="night" src="images/night.svg" alt="night" />
-            <img class="account" src="images/account.svg" alt="account" />
+            <svg class="night">
+              <use xlink:href="icons.svg#night" />
+            </svg>
+            <svg class="account">
+              <use xlink:href="icons.svg#account" />
+            </svg>
           </div>
         </div>
       </div>
@@ -55,106 +61,113 @@
       </form>
       <div class="application">
         <a href="#" class="google_link">
-          <img src="images/google-play.svg" alt="google_play" class="google"
+          <img src="images/google-play.svg" class="google" alt="google_play"
         /></a>
-        <a href="#" class="app_link"
-          ><img src="images/app_store.svg" alt="app_store" class="app_store"
+        <a href="#" class="app_link">
+          <img src="images/app_store.svg" class="app_store" alt="app_store"
         /></a>
       </div>
     </header>
     <div class="container">
       <h2 class="title">What do we offer</h2>
       <div class="line">
-        <hr />
+        <div class="line">
+          <hr />
+        </div>
       </div>
       <div class="wrapper">
         <div class="wrapper_items">
           <div class="block col-5 col-5-s">
-            <img src="./images/support.svg" alt="support" class="images" />
+            <svg class="images">
+              <use xlink:href="icons.svg#support" />
+            </svg>
             <div class="text_offer">Support 24/7</div>
           </div>
           <div class="block col-5 col-5-s">
-            <img
-              src="./images/communicate_directly.svg"
-              alt="communicate_directly"
-              class="images"
-            />
+            <svg class="images">
+              <use xlink:href="icons.svg#communicate_directly" />
+            </svg>
             <div class="text_offer">Communicate directly</div>
           </div>
           <div class="block col-5 col-5-s">
-            <img
-              src="./images/book_online.svg"
-              alt="book_online"
-              class="images"
-            />
+            <svg class="images">
+              <use xlink:href="icons.svg#book_online" />
+            </svg>
             <div class="text_offer">Book online</div>
           </div>
           <div class="block col-5 col-5-s">
-            <img src="./images/reviews.svg" alt="reviews" class="images" />
+            <svg class="images">
+              <use xlink:href="icons.svg#reviews" />
+            </svg>
             <div class="text_offer">Real guest reviews</div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container footer">
-      <div class="footer_elements">
-        <div class="footer_elements_items">
-          <div class="footer_items col-6 col-6-s">
-            <ul class="about">
-              <li class="about_items">About</li>
-              <li class="about_items">
-                <a href="#" class="about_links"> How Triphouse works</a>
-              </li>
-              <li class="about_items">
-                <a href="#" class="about_links">Careers</a>
-              </li>
-              <li class="about_items">
-                <a href="#" class="about_links">Privacy</a>
-              </li>
-              <li class="about_items">
-                <a href="#" class="about_links">Terms</a>
-              </li>
-            </ul>
+      <div class="container footer">
+        <div class="footer_elements">
+          <div class="footer_logo">
+            <svg class="footer_adaptive_logo fill">
+              <use xlink:href="icons.svg#logo" />
+            </svg>
           </div>
-          <div class="footer_items col-6 col-6-s">
-            <ul class="property_types">
-              <li class="property_types_items">Property types</li>
-              <li class="property_types_items">
-                <a href="#" class="about_links">Guest houses</a>
-              </li>
-              <li class="property_types_items">
-                <a href="#" class="about_links">Hotels</a>
-              </li>
-              <li class="property_types_items">
-                <a href="#" class="about_links">Apartments</a>
-              </li>
-              <li class="property_types_items">
-                <a href="#" class="about_links">Villas</a>
-              </li>
-              <li class="property_types_items">
-                <a href="#" class="about_links">Holiday homes</a>
-              </li>
-              <li class="property_types_items">
-                <a href="#" class="about_links">Hostels</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer_items col-6 col-6-s">
-            <ul class="support">
-              <li class="support_items">Support</li>
-              <li class="support_items">
-                <a href="#" class="about_links">Contact Customer Service</a>
-              </li>
-              <li class="support_items">
-                <a href="#" class="about_links">FAQ</a>
-              </li>
-            </ul>
+          <div class="footer_menu">
+            <div class="footer_items col-6">
+              <ul class="about">
+                <li class="about_items">About</li>
+                <li class="about_items invisible">
+                  <a href="#" class="footer_links"> How Triphouse works</a>
+                </li>
+                <li class="about_items invisible">
+                  <a href="#" class="footer_links">Careers</a>
+                </li>
+                <li class="about_items invisible">
+                  <a href="#" class="footer_links">Privacy</a>
+                </li>
+                <li class="about_items invisible">
+                  <a href="#" class="footer_links">Terms</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_items col-6">
+              <ul class="property_types">
+                <li class="property_types_items">Property types</li>
+                <li class="property_types_items invisible">
+                  <a href="#" class="footer_links">Guest houses</a>
+                </li>
+                <li class="property_types_items invisible">
+                  <a href="#" class="footer_links">Hotels</a>
+                </li>
+                <li class="property_types_items invisible">
+                  <a href="#" class="footer_links">Apartments</a>
+                </li>
+                <li class="property_types_items invisible">
+                  <a href="#" class="footer_links">Villas</a>
+                </li>
+                <li class="property_types_items invisible">
+                  <a href="#" class="footer_links">Holiday homes</a>
+                </li>
+                <li class="property_types_items invisible">
+                  <a href="#" class="footer_links">Hostels</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer_items col-6">
+              <ul class="support">
+                <li class="support_items">Support</li>
+                <li class="support_items invisible">
+                  <a href="#" class="footer_links">Contact Customer Service</a>
+                </li>
+                <li class="support_items invisible">
+                  <a href="#" class="footer_links">FAQ</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="label">
-        <div class="label_items">
-          &copy;2020 Triphouse, Inc. All rights reserved
+        <div class="label">
+          <div class="label_items">
+            &copy;2020 Triphouse, Inc. All rights reserved
+          </div>
         </div>
       </div>
     </div>
