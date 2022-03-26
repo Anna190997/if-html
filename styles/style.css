@@ -204,6 +204,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 .line:after {
   content: "";
