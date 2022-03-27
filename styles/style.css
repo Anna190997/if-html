@@ -11,11 +11,15 @@
   font-family: Roboto-Regular, sans-serif;
   src: url("../about/fonts/Roboto-Medium.woff") format("woff");
 }
+.general_background {
+  width: 100%;
+}
 .container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-left: 104px;
 }
 header {
   background-image: url("../about/images/castelbackground.png");
@@ -56,7 +60,6 @@ header {
   position: relative;
   transition-property: border-bottom;
 }
-
 .stays:after {
   content: "";
   position: absolute;
@@ -191,16 +194,17 @@ label {
   justify-content: center;
   padding: 120px 0;
 }
+/*What do we offer styles*/
 .title {
   font-family: Roboto, sans-serif;
   font-style: normal;
   padding-top: 120px;
+  padding-bottom: 120px;
   text-align: center;
   font-size: 40px;
 }
 .line {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   position: relative;
 }
@@ -209,7 +213,7 @@ label {
   position: absolute;
   width: 100px;
   height: 4px;
-  bottom: 0;
+  bottom: 100px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -222,7 +226,6 @@ label {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 120px;
-  padding-top: 90px;
   padding-right: 20px;
 }
 .wrapper_items {
@@ -252,8 +255,6 @@ label {
 .hotel {
   background-color: #eaf0f9;
   height: 828px;
-  min-width: 100%;
-  background-size: cover;
 }
 .places {
   display: flex;
@@ -264,13 +265,26 @@ label {
 }
 .places_items {
   display: flex;
-  padding-top: 106px;
-  padding-left: 104px;
-  position: absolute;
 }
 figcaption {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+.hotel_offer {
+  position: relative;
+}
+.more {
+  position: absolute;
+  width: 15%;
+  left: 84%;
+  top: 30%;
+}
+.not_view_more {
+  position: absolute;
+  width: 15%;
+  left: 84%;
+  top: 32%;
+  display: none;
 }
 .hotel_links {
   text-decoration: none;
@@ -282,23 +296,14 @@ figcaption {
   font-size: 24px;
   color: #bfbfbf;
 }
-.more {
-  width: 4%;
-  position: absolute;
-  padding-left: 92vw;
-  padding-top: 38vh;
-}
 /*Footer styles*/
 .footer {
   background-color: #10367c;
-  min-width: 100%;
-  background-size: cover;
 }
 .footer_menu {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 104px;
   padding-top: 120px;
 }
 .footer_items {
@@ -332,7 +337,6 @@ figcaption {
   font-weight: bolder;
 }
 .label {
-  padding-left: 105px;
   padding-bottom: 120px;
 }
 .label_items {
@@ -344,15 +348,11 @@ figcaption {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .container {
+    padding-left: 30px;
+  }
   .hotel {
     height: 740px;
-  }
-  .places_items {
-    padding-left: 50px;
-  }
-  .more {
-    padding-left: 93vw;
-    padding-top: 29vh;
   }
   .hotel_links {
     font-size: 18px;
@@ -361,7 +361,6 @@ figcaption {
     font-size: 18px;
   }
   .footer_elements {
-    padding-left: 50px;
     padding-top: 50px;
   }
   .about_items,
@@ -395,9 +394,6 @@ figcaption {
   .hotel {
     height: 640px;
   }
-  .more {
-    padding-top: 26vh;
-  }
   .text_offer {
     padding-top: 30px;
     font-size: 15px;
@@ -408,7 +404,6 @@ figcaption {
   }
   .wrapper {
     padding-bottom: 80px;
-    padding-top: 80px;
   }
   .hotel_links {
     font-size: 14px;
@@ -421,7 +416,6 @@ figcaption {
     padding-bottom: 16px;
   }
   .footer_elements {
-    padding-left: 20px;
     padding-top: 30px;
   }
   .label {
@@ -430,6 +424,9 @@ figcaption {
   }
 }
 @media screen and (max-width: 500px) {
+  .container {
+    padding-left: 30px;
+  }
   hr {
     width: 60px;
     margin-top: 15px;
@@ -440,8 +437,12 @@ figcaption {
   .not_view {
     display: none;
   }
+  .not_view_more {
+    display: flex;
+  }
   .title {
     padding-top: 40px;
+    padding-bottom: 60px;
     font-size: 28px;
   }
   .places_items {
@@ -454,10 +455,6 @@ figcaption {
   figcaption {
     padding-top: 5px;
     padding-bottom: 5px;
-  }
-  .more {
-    padding-left: 90vw;
-    padding-top: 23vh;
   }
   .footer_elements {
     flex-direction: column;
@@ -495,6 +492,9 @@ figcaption {
   }
 }
 @media screen and (max-width: 360px) {
+  .container {
+    padding-left: 20px;
+  }
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -533,10 +533,6 @@ figcaption {
   }
   .location {
     font-size: 12px;
-  }
-  .more {
-    padding-left: 89vw;
-    padding-top: 18vh;
   }
 }
 @media only screen and (min-width: 768px) {
