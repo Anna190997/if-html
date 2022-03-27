@@ -58,8 +58,6 @@ header {
 }
 
 .stays:after {
-  /*text-decoration: none;
-  border-bottom: 4px solid #f5bd41;*/
   content: "";
   position: absolute;
   height: 4px;
@@ -250,23 +248,24 @@ label {
   font-size: 24px;
   color: #383838;
 }
-
 /*Homes guests loves style*/
 .hotel {
   background-color: #eaf0f9;
   height: 828px;
+  min-width: 100%;
+  background-size: cover;
 }
 .places {
   display: flex;
   flex-direction: column;
 }
+.places_image {
+  width: 90%;
+}
 .places_items {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   padding-top: 106px;
   padding-left: 104px;
-  padding-right: 62px;
   position: absolute;
 }
 figcaption {
@@ -284,14 +283,16 @@ figcaption {
   color: #bfbfbf;
 }
 .more {
-  position: relative;
-  padding-left: 1270px;
-  padding-top: 244px;
+  width: 4%;
+  position: absolute;
+  padding-left: 92vw;
+  padding-top: 38vh;
 }
-
 /*Footer styles*/
 .footer {
   background-color: #10367c;
+  min-width: 100%;
+  background-size: cover;
 }
 .footer_menu {
   display: flex;
@@ -343,6 +344,22 @@ figcaption {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .hotel {
+    height: 740px;
+  }
+  .places_items {
+    padding-left: 50px;
+  }
+  .more {
+    padding-left: 93vw;
+    padding-top: 29vh;
+  }
+  .hotel_links {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 18px;
+  }
   .footer_elements {
     padding-left: 50px;
     padding-top: 50px;
@@ -354,6 +371,7 @@ figcaption {
     font-size: 15px;
   }
   .label {
+    padding-top: 20px;
     padding-left: 50px;
     padding-bottom: 60px;
   }
@@ -364,9 +382,6 @@ figcaption {
   .text_offer {
     font-size: 20px;
   }
-  .label {
-    padding-bottom: 10px;
-  }
   .footer_menu {
     padding-top: 0;
     padding-left: 0;
@@ -376,6 +391,12 @@ figcaption {
   .images {
     width: 80px;
     height: 80px;
+  }
+  .hotel {
+    height: 640px;
+  }
+  .more {
+    padding-top: 26vh;
   }
   .text_offer {
     padding-top: 30px;
@@ -389,6 +410,16 @@ figcaption {
     padding-bottom: 80px;
     padding-top: 80px;
   }
+  .hotel_links {
+    font-size: 14px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  figcaption {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .footer_elements {
     padding-left: 20px;
     padding-top: 30px;
@@ -399,8 +430,34 @@ figcaption {
   }
 }
 @media screen and (max-width: 500px) {
+  hr {
+    width: 60px;
+    margin-top: 15px;
+  }
   .invisible {
     display: none;
+  }
+  .not_view {
+    display: none;
+  }
+  .title {
+    padding-top: 40px;
+    font-size: 28px;
+  }
+  .places_items {
+    padding-top: 32px;
+    padding-left: 8px;
+  }
+  .hotel {
+    height: 440px;
+  }
+  figcaption {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .more {
+    padding-left: 90vw;
+    padding-top: 23vh;
   }
   .footer_elements {
     flex-direction: column;
@@ -421,7 +478,7 @@ figcaption {
   .footer_menu {
     display: flex;
     flex-direction: row;
-    padding: 0 60px 32px;
+    padding: 0 44px 32px;
   }
   .about_items,
   .property_types_items,
@@ -429,18 +486,15 @@ figcaption {
     font-size: 15px;
     text-decoration: underline;
   }
-}
-@media screen and (max-width: 360px) {
   .label {
     padding-bottom: 40px;
-    padding-left: 62px;
+    padding-left: 50px;
   }
   .label_items {
     font-size: 12px;
   }
-  .fill {
-    fill: #ffffff;
-  }
+}
+@media screen and (max-width: 360px) {
   .wrapper {
     flex-direction: column;
     align-items: center;
@@ -463,6 +517,27 @@ figcaption {
     height: 2px;
     margin-top: 15px;
   }
+  .text {
+    padding-top: 40px;
+    font-size: 28px;
+  }
+  figcaption {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+  .hotel {
+    height: 380px;
+  }
+  .hotel_links {
+    font-size: 12px;
+  }
+  .location {
+    font-size: 12px;
+  }
+  .more {
+    padding-left: 89vw;
+    padding-top: 18vh;
+  }
 }
 @media only screen and (min-width: 768px) {
   .col-1 {
@@ -483,6 +558,9 @@ figcaption {
   .col-6 {
     width: 33%;
   }
+  .col-7 {
+    width: 25%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .col-1-s {
@@ -499,6 +577,14 @@ figcaption {
   }
   .col-5-s {
     width: 50%;
+  }
+  .col-7-s {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-7 {
+    width: 60%;
   }
 }
 @media only screen and (max-width: 360px) {
@@ -517,56 +603,7 @@ figcaption {
   .col-5 {
     width: 100%;
   }
-}
-
-@media (max-width: 768px) {
-  .places_image {
-    width: 170px;
-    height: 170px;
-  }
-  .places_items {
-    padding-left: 50px;
-  }
-  .more {
-    padding-left: 710px;
-    padding-top: 180px;
-  }
-}
-@media (max-width: 360px) {
-  .not_view {
-    display: none;
-  }
-  .places_image {
-    width: 155px;
-    height: 155px;
-  }
-  .places_items {
-    padding-top: 32px;
-    padding-left: 15px;
-    padding-right: 10px;
-  }
-  .more {
-    width: 28px;
-    height: 28px;
-    padding-left: 310px;
-    padding-top: 115px;
-  }
-
-  .hotel {
-    height: 354px;
-  }
-  .text {
-    padding-top: 40px;
-    font-size: 28px;
-  }
-  figcaption {
-    padding-top: 8px;
-    padding-bottom: 4px;
-  }
-  .hotel_links {
-    font-size: 12px;
-  }
-  .location {
-    font-size: 12px;
+  .col-7 {
+    width: 50%;
   }
 }
