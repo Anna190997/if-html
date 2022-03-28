@@ -20,6 +20,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding-left: 104px;
+  padding-right: 104px;
 }
 header {
   background-image: url("../about/images/castelbackground.png");
@@ -283,7 +284,7 @@ figcaption {
   position: absolute;
   width: 15%;
   left: 84%;
-  top: 32%;
+  top: 40%;
   display: none;
 }
 .hotel_links {
@@ -296,6 +297,115 @@ figcaption {
   font-size: 24px;
   color: #bfbfbf;
 }
+/*Destinations styles*/
+.destinations {
+  height: 1158px;
+  background-color: #ffffff;
+}
+.change {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  margin-right: 42vw;
+  background-color: #f3f3f4;
+  border-radius: 8px;
+}
+.change_items {
+  border: none;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+.regions {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 30%;
+}
+.cities {
+  width: 30%;
+}
+.interest {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 40%;
+}
+.change_items:hover {
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.change_items:active {
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.regions_items {
+  display: flex;
+  margin-top: 64px;
+}
+.regions_for_visit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.regions_offer {
+  position: relative;
+}
+.book_now {
+  position: absolute;
+  top: 35%;
+  right: 32%;
+  background-color: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  color: #3077c6;
+  width: 45%;
+  height: 15%;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+figcaption {
+  padding-top: 24px;
+}
+.view_more {
+  position: absolute;
+  top: 110%;
+  right: 94%;
+}
+.sign_up {
+  position: relative;
+  margin-top: 18%;
+  height: 200px;
+  background-color: #eaf0f9;
+}
+.user {
+  padding: 57px 24px;
+}
+.sign_text {
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #383838;
+  top: 24%;
+}
+.button_sign {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  font-family: Roboto, sans-serif;
+  color: #3077c6;
+  font-size: 18px;
+  height: 25%;
+  width: 12%;
+  top: 54%;
+}
+.vector {
+  position: absolute;
+  left: 95%;
+  top: 10%;
+}
+/*Guests reviews styles*/
+
 /*Footer styles*/
 .footer {
   background-color: #10367c;
@@ -347,9 +457,29 @@ figcaption {
 .footer_logo {
   display: none;
 }
+@media screen and (max-width: 985px) {
+  .more {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .book_now {
+    font-size: 14px;
+  }
+  .change_items {
+    font-size: 20px;
+  }
+  .sign_text {
+    font-size: 18px;
+  }
+  .button_sign {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     padding-left: 30px;
+    padding-right: 30px;
   }
   .hotel {
     height: 740px;
@@ -415,6 +545,21 @@ figcaption {
     padding-top: 16px;
     padding-bottom: 16px;
   }
+  .book_now {
+    font-size: 10px;
+  }
+  .change_items {
+    font-size: 16px;
+  }
+  .sign_text {
+    font-size: 14px;
+  }
+  .button_sign {
+    font-size: 12px;
+  }
+  .vector {
+    width: 4%;
+  }
   .footer_elements {
     padding-top: 30px;
   }
@@ -424,12 +569,10 @@ figcaption {
   }
 }
 @media screen and (max-width: 500px) {
-  .container {
-    padding-left: 30px;
-  }
-  hr {
+  .line {
     width: 60px;
-    margin-top: 15px;
+    margin-top: 50px;
+    margin-left: 130px;
   }
   .invisible {
     display: none;
@@ -439,6 +582,9 @@ figcaption {
   }
   .not_view_more {
     display: flex;
+  }
+  .change_items {
+    margin-right: 20px;
   }
   .title {
     padding-top: 40px;
@@ -455,6 +601,28 @@ figcaption {
   figcaption {
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  .destinations {
+    height: 600px;
+  }
+  .change {
+    margin-right: 1vw;
+    height: 42px;
+    background-color: #ffffff;
+  }
+  .change_items {
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
+    font-size: 19px;
+    border-radius: 4px;
+  }
+  .regions {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .interest {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
   }
   .footer_elements {
     flex-direction: column;
