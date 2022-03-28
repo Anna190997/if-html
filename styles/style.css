@@ -11,11 +11,15 @@
   font-family: Roboto-Regular, sans-serif;
   src: url("../about/fonts/Roboto-Medium.woff") format("woff");
 }
+.general_background {
+  width: 100%;
+}
 .container {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  padding-left: 104px;
 }
 header {
   background-image: url("../about/images/castelbackground.png");
@@ -53,6 +57,28 @@ header {
   font-size: 24px;
   text-decoration: none;
   margin-right: 24px;
+  position: relative;
+  transition-property: border-bottom;
+}
+.stays:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+}
+.attractions:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
 }
 .stays:hover {
   text-decoration: none;
@@ -168,22 +194,30 @@ label {
   justify-content: center;
   padding: 120px 0;
 }
+/*What do we offer styles*/
 .title {
   font-family: Roboto, sans-serif;
   font-style: normal;
   padding-top: 120px;
+  padding-bottom: 120px;
   text-align: center;
   font-size: 40px;
 }
 .line {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
-hr {
+.line:after {
+  content: "";
+  position: absolute;
   width: 100px;
   height: 4px;
-  margin-top: 20px;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
   background-color: #f5bd41;
   border: none;
 }
@@ -192,7 +226,6 @@ hr {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 120px;
-  padding-top: 90px;
   padding-right: 20px;
 }
 .wrapper_items {
@@ -218,6 +251,51 @@ hr {
   font-size: 24px;
   color: #383838;
 }
+/*Homes guests loves style*/
+.hotel {
+  background-color: #eaf0f9;
+  height: 828px;
+}
+.places {
+  display: flex;
+  flex-direction: column;
+}
+.places_image {
+  width: 90%;
+}
+.places_items {
+  display: flex;
+}
+figcaption {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.hotel_offer {
+  position: relative;
+}
+.more {
+  position: absolute;
+  width: 15%;
+  left: 84%;
+  top: 30%;
+}
+.not_view_more {
+  position: absolute;
+  width: 15%;
+  left: 84%;
+  top: 32%;
+  display: none;
+}
+.hotel_links {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+}
+.location {
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #bfbfbf;
+}
 /*Footer styles*/
 .footer {
   background-color: #10367c;
@@ -226,7 +304,6 @@ hr {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-left: 104px;
   padding-top: 120px;
 }
 .footer_items {
@@ -260,7 +337,6 @@ hr {
   font-weight: bolder;
 }
 .label {
-  padding-left: 105px;
   padding-bottom: 120px;
 }
 .label_items {
@@ -272,8 +348,19 @@ hr {
   display: none;
 }
 @media screen and (max-width: 768px) {
+  .container {
+    padding-left: 30px;
+  }
+  .hotel {
+    height: 740px;
+  }
+  .hotel_links {
+    font-size: 18px;
+  }
+  .location {
+    font-size: 18px;
+  }
   .footer_elements {
-    padding-left: 50px;
     padding-top: 50px;
   }
   .about_items,
@@ -283,6 +370,7 @@ hr {
     font-size: 15px;
   }
   .label {
+    padding-top: 20px;
     padding-left: 50px;
     padding-bottom: 60px;
   }
@@ -292,9 +380,6 @@ hr {
   }
   .text_offer {
     font-size: 20px;
-  }
-  .label {
-    padding-bottom: 10px;
   }
   .footer_menu {
     padding-top: 0;
@@ -306,6 +391,9 @@ hr {
     width: 80px;
     height: 80px;
   }
+  .hotel {
+    height: 640px;
+  }
   .text_offer {
     padding-top: 30px;
     font-size: 15px;
@@ -316,10 +404,18 @@ hr {
   }
   .wrapper {
     padding-bottom: 80px;
-    padding-top: 80px;
+  }
+  .hotel_links {
+    font-size: 14px;
+  }
+  .location {
+    font-size: 14px;
+  }
+  figcaption {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   .footer_elements {
-    padding-left: 20px;
     padding-top: 30px;
   }
   .label {
@@ -328,8 +424,37 @@ hr {
   }
 }
 @media screen and (max-width: 500px) {
+  .container {
+    padding-left: 30px;
+  }
+  hr {
+    width: 60px;
+    margin-top: 15px;
+  }
   .invisible {
     display: none;
+  }
+  .not_view {
+    display: none;
+  }
+  .not_view_more {
+    display: flex;
+  }
+  .title {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    font-size: 28px;
+  }
+  .places_items {
+    padding-top: 32px;
+    padding-left: 8px;
+  }
+  .hotel {
+    height: 440px;
+  }
+  figcaption {
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
   .footer_elements {
     flex-direction: column;
@@ -350,7 +475,7 @@ hr {
   .footer_menu {
     display: flex;
     flex-direction: row;
-    padding: 0 60px 32px;
+    padding: 0 44px 32px;
   }
   .about_items,
   .property_types_items,
@@ -358,17 +483,17 @@ hr {
     font-size: 15px;
     text-decoration: underline;
   }
-}
-@media screen and (max-width: 360px) {
   .label {
     padding-bottom: 40px;
-    padding-left: 62px;
+    padding-left: 50px;
   }
   .label_items {
     font-size: 12px;
   }
-  .fill {
-    fill: #ffffff;
+}
+@media screen and (max-width: 360px) {
+  .container {
+    padding-left: 20px;
   }
   .wrapper {
     flex-direction: column;
@@ -392,6 +517,23 @@ hr {
     height: 2px;
     margin-top: 15px;
   }
+  .text {
+    padding-top: 40px;
+    font-size: 28px;
+  }
+  figcaption {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+  .hotel {
+    height: 380px;
+  }
+  .hotel_links {
+    font-size: 12px;
+  }
+  .location {
+    font-size: 12px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .col-1 {
@@ -412,6 +554,9 @@ hr {
   .col-6 {
     width: 33%;
   }
+  .col-7 {
+    width: 25%;
+  }
 }
 @media only screen and (max-width: 768px) {
   .col-1-s {
@@ -429,6 +574,14 @@ hr {
   .col-5-s {
     width: 50%;
   }
+  .col-7-s {
+    width: 25%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .col-7 {
+    width: 60%;
+  }
 }
 @media only screen and (max-width: 360px) {
   .col-1 {
@@ -445,5 +598,8 @@ hr {
   }
   .col-5 {
     width: 100%;
+  }
+  .col-7 {
+    width: 50%;
   }
 }
