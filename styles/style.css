@@ -351,6 +351,7 @@ figcaption {
   position: relative;
 }
 .book_now {
+  display: none;
   position: absolute;
   top: 35%;
   right: 32%;
@@ -362,6 +363,9 @@ figcaption {
   height: 15%;
   font-family: Roboto, sans-serif;
   font-size: 18px;
+}
+.regions_offer:hover .book_now {
+  display: block;
 }
 figcaption {
   padding-top: 24px;
@@ -405,6 +409,122 @@ figcaption {
   top: 10%;
 }
 /*Guests reviews styles*/
+.reviews {
+  height: 1161px;
+}
+.reviews_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.reviews_content_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.reviews_items {
+  height: 760px;
+  background-color: #eaf0f9;
+  position: relative;
+}
+
+.reviews_photo {
+  position: relative;
+  width: 100%;
+}
+.more_reviews {
+  position: absolute;
+  top: 25%;
+  left: 93%;
+}
+.price {
+  padding-top: 16px;
+  padding-left: 24px;
+  padding-bottom: 11px;
+  position: absolute;
+  background-color: rgba(56, 56, 56, 0.7);
+  transform: translateY(-105%);
+  width: 94%;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+.hotel_reviews {
+  padding: 24px 24px 16px;
+}
+.hotel_reviews_links {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #3077c6;
+}
+.location_reviews {
+  padding-left: 24px;
+  padding-bottom: 25px;
+}
+.location_reviews_links {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  color: #3077c6;
+  font-weight: 400;
+  font-size: 18px;
+}
+.block_reviews {
+  position: relative;
+  height: 360px;
+}
+.rating {
+  position: absolute;
+  bottom: 87%;
+  left: 82%;
+  width: 13%;
+  height: 10%;
+  background-color: #10367c;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  border: none;
+}
+.number_reviews {
+  position: absolute;
+  left: 73%;
+  bottom: 78%;
+  color: #bfbfbf;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+.user_reviews {
+  position: absolute;
+  left: 3%;
+  bottom: 54%;
+}
+.reviews_name {
+  position: absolute;
+  left: 23%;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+}
+.reviews_places {
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #bfbfbf;
+  left: 23%;
+  bottom: 55%;
+}
+.review {
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #383838;
+  top: 55%;
+  left: 5%;
+}
 
 /*Footer styles*/
 .footer {
@@ -724,6 +844,9 @@ figcaption {
   }
   .col-7 {
     width: 25%;
+  }
+  .col-8 {
+    width: 33%;
   }
 }
 @media only screen and (max-width: 768px) {
