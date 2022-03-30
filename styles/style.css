@@ -427,15 +427,18 @@ figcaption {
   background-color: #eaf0f9;
   position: relative;
 }
-
 .reviews_photo {
   position: relative;
   width: 100%;
+}
+.not_view_reviews {
+  display: none;
 }
 .more_reviews {
   position: absolute;
   top: 25%;
   left: 93%;
+  width: 15%;
 }
 .price {
   padding-top: 16px;
@@ -496,6 +499,7 @@ figcaption {
   font-size: 14px;
 }
 .user_reviews {
+  width: 18%;
   position: absolute;
   left: 3%;
   bottom: 54%;
@@ -514,8 +518,14 @@ figcaption {
   font-size: 18px;
   font-weight: 400;
   color: #bfbfbf;
-  left: 23%;
+  left: 33%;
   bottom: 55%;
+}
+.country {
+  position: absolute;
+  left: 25%;
+  top: 38%;
+  width: 7%;
 }
 .review {
   position: absolute;
@@ -525,7 +535,6 @@ figcaption {
   top: 55%;
   left: 5%;
 }
-
 /*Footer styles*/
 .footer {
   background-color: #10367c;
@@ -581,6 +590,38 @@ figcaption {
   .more {
     top: 25%;
   }
+  .more_reviews {
+    top: 15%;
+  }
+  .hotel_reviews_links {
+    font-size: 12px;
+  }
+  .location_reviews_links {
+    font-size: 12px;
+  }
+  .rating {
+    font-size: 14px;
+  }
+  .number_reviews {
+    font-size: 10px;
+  }
+  .user_reviews {
+    bottom: 60%;
+  }
+  .reviews_name {
+    font-size: 14px;
+  }
+  .reviews_places {
+    font-size: 14px;
+    bottom: 60%;
+  }
+  .review {
+    font-size: 16px;
+    top: 45%;
+  }
+  .price {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 900px) {
   .book_now {
@@ -594,6 +635,9 @@ figcaption {
   }
   .button_sign {
     font-size: 14px;
+  }
+  .price {
+    width: 89%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -631,6 +675,27 @@ figcaption {
   .text_offer {
     font-size: 20px;
   }
+  .reviews_items {
+    height: 650px;
+  }
+  .reviews {
+    height: 1000px;
+  }
+  .review {
+    font-size: 12px;
+  }
+  .number_reviews {
+    font-size: 8px;
+  }
+  .location_reviews_links {
+    font-size: 10px;
+  }
+  .price {
+    width: 90%;
+  }
+  .more_reviews {
+    top: 15%;
+  }
   .footer_menu {
     padding-top: 0;
     padding-left: 0;
@@ -661,6 +726,9 @@ figcaption {
   .location {
     font-size: 14px;
   }
+  .price {
+    width: 87%;
+  }
   figcaption {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -673,6 +741,25 @@ figcaption {
   }
   .sign_text {
     font-size: 14px;
+  }
+  .reviews_name {
+    font-size: 12px;
+  }
+  .hotel_reviews_links {
+    font-size: 12px;
+  }
+  .location_reviews_links {
+    font-size: 12px;
+  }
+  .number_reviews {
+    bottom: 73%;
+  }
+  .rating {
+    width: 15%;
+  }
+  .reviews_places {
+    font-size: 12px;
+    bottom: 60%;
   }
   .button_sign {
     font-size: 12px;
@@ -702,6 +789,31 @@ figcaption {
   }
   .not_view_more {
     display: flex;
+  }
+  .not_view_reviews {
+    display: inline-block;
+  }
+  .reviews {
+    background-color: #eaf0f9;
+  }
+  .rating {
+    height: 7%;
+  }
+  .hotel_reviews_links,
+  .location_reviews_links,
+  .reviews_name,
+  .country,
+  .rating,
+  .review {
+    font-size: 15px;
+  }
+  .number_reviews {
+    font-size: 11px;
+    bottom: 80%;
+    left: 80%;
+  }
+  .user_reviews {
+    top: 25%;
   }
   .change_items {
     margin-right: 20px;
@@ -778,6 +890,42 @@ figcaption {
   .label_items {
     font-size: 12px;
   }
+  .ellipse {
+    padding-left: 45%;
+  }
+  .sign_up_adaptive {
+    position: relative;
+    height: 106px;
+  }
+  .vector_adaptive {
+    position: absolute;
+    padding-top: 8%;
+  }
+  .sign_logo {
+    width: 20%;
+    margin-left: 15%;
+    margin-top: 6%;
+    background-color: #3077c6;
+    fill: #ffffff;
+    border-radius: 4px;
+    height: 58px;
+  }
+  .sign_text_adaptive {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    color: #383838;
+    left: 40%;
+    top: 35%;
+  }
+  .install {
+    position: absolute;
+    left: 85%;
+    top: 42%;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 360px) {
   .container {
@@ -786,6 +934,9 @@ figcaption {
   .wrapper {
     flex-direction: column;
     align-items: center;
+  }
+  .reviews {
+    height: 800px;
   }
   .text_offer {
     padding-top: 5px;
@@ -821,6 +972,10 @@ figcaption {
   }
   .location {
     font-size: 12px;
+  }
+  .footer_menu {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -889,6 +1044,9 @@ figcaption {
   }
   .col-5 {
     width: 100%;
+  }
+  .col-6 {
+    width: 33%;
   }
   .col-7 {
     width: 50%;
