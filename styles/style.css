@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 @font-face {
   font-family: Roboto-Regular, sans-serif;
@@ -100,10 +101,12 @@ header {
   padding-right: 24px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 .account {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .block_text {
   display: flex;
@@ -268,7 +271,7 @@ label {
 .places_items {
   display: flex;
 }
-figcaption {
+.name_hotel {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -277,6 +280,7 @@ figcaption {
 }
 .more {
   position: absolute;
+  cursor: pointer;
   width: 15%;
   left: 84%;
   top: 30%;
@@ -286,6 +290,7 @@ figcaption {
   width: 15%;
   left: 84%;
   top: 40%;
+  cursor: pointer;
   display: none;
 }
 .hotel_links {
@@ -368,11 +373,12 @@ figcaption {
 .regions_offer:hover .book_now {
   display: block;
 }
-figcaption {
+.name_hotel {
   padding-top: 24px;
 }
 .view_more {
   position: absolute;
+  cursor: pointer;
   top: 110%;
   right: 94%;
 }
@@ -440,6 +446,7 @@ figcaption {
 }
 .more_reviews {
   position: absolute;
+  cursor: pointer;
   top: 20%;
   left: 93%;
   width: 15%;
@@ -458,7 +465,7 @@ figcaption {
   display: flex;
   flex-direction: column;
   justify-content: normal;
-  height: 380px;
+ height: 380px;
 }
 .place_information {
   display: flex;
@@ -556,7 +563,7 @@ figcaption {
 .review {
   display: flex;
   justify-content: space-between;
-  padding-left: 24px;
+  padding: 0 24px;
   font-family: Roboto, sans-serif;
   font-size: 18px;
   color: #383838;
@@ -564,6 +571,7 @@ figcaption {
 /*Footer styles*/
 .footer {
   background-color: #10367c;
+    width: 100%;
 }
 .footer_menu {
   display: flex;
@@ -738,7 +746,7 @@ figcaption {
   .price {
     width: 87%;
   }
-  figcaption {
+  .name_hotel {
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -824,7 +832,7 @@ figcaption {
   .block_reviews {
     height: max-content;
   }
-  figcaption {
+  .name_hotel {
     padding-top: 5px;
     padding-bottom: 5px;
   }
@@ -872,6 +880,7 @@ figcaption {
   .footer_menu {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
   }
   .about_items,
   .property_types_items,
@@ -951,7 +960,7 @@ figcaption {
     padding-top: 40px;
     font-size: 28px;
   }
-  figcaption {
+ .name_hotel {
     padding-top: 8px;
     padding-bottom: 4px;
   }
@@ -986,9 +995,6 @@ figcaption {
   }
   .col-7 {
     width: 25%;
-  }
-  .col-8 {
-    width: 33%;
   }
 }
 @media only screen and (max-width: 768px) {
