@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 @font-face {
   font-family: Roboto-Regular, sans-serif;
@@ -20,6 +21,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   padding-left: 104px;
+  padding-right: 104px;
 }
 header {
   background-image: url("../about/images/castelbackground.png");
@@ -99,10 +101,12 @@ header {
   padding-right: 24px;
   width: 30px;
   height: 30px;
+  cursor: pointer;
 }
 .account {
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .block_text {
   display: flex;
@@ -254,11 +258,12 @@ label {
 /*Homes guests loves style*/
 .hotel {
   background-color: #eaf0f9;
-  height: 828px;
+  height: max-content;
 }
 .places {
   display: flex;
   flex-direction: column;
+  padding-bottom: 120px;
 }
 .places_image {
   width: 90%;
@@ -266,7 +271,7 @@ label {
 .places_items {
   display: flex;
 }
-figcaption {
+.name_hotel {
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -275,6 +280,7 @@ figcaption {
 }
 .more {
   position: absolute;
+  cursor: pointer;
   width: 15%;
   left: 84%;
   top: 30%;
@@ -283,7 +289,8 @@ figcaption {
   position: absolute;
   width: 15%;
   left: 84%;
-  top: 32%;
+  top: 40%;
+  cursor: pointer;
   display: none;
 }
 .hotel_links {
@@ -296,9 +303,275 @@ figcaption {
   font-size: 24px;
   color: #bfbfbf;
 }
+/*Destinations styles*/
+.destinations {
+  height: max-content;
+  background-color: #ffffff;
+}
+.change {
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  margin-right: 42vw;
+  background-color: #f3f3f4;
+  border-radius: 8px;
+}
+.change_items {
+  border: none;
+  font-size: 24px;
+  font-family: Roboto, sans-serif;
+}
+.regions {
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  width: 30%;
+}
+.cities {
+  width: 30%;
+}
+.interest {
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 40%;
+}
+.change_items:hover {
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.change_items:active {
+  background-color: #3077c6;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.regions_items {
+  display: flex;
+  margin-top: 64px;
+}
+.regions_for_visit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.regions_offer {
+  position: relative;
+}
+.book_now {
+  display: none;
+  position: absolute;
+  top: 35%;
+  right: 32%;
+  background-color: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  color: #3077c6;
+  width: 45%;
+  height: 15%;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+.regions_offer:hover .book_now {
+  display: block;
+}
+.name_hotel {
+  padding-top: 24px;
+}
+.view_more {
+  position: absolute;
+  cursor: pointer;
+  top: 110%;
+  right: 94%;
+}
+.sign_up {
+  margin-top: 18%;
+  background-color: #eaf0f9;
+}
+.sign_up_items {
+  position: relative;
+}
+.user {
+  padding: 5% 5%;
+}
+.sign_text {
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-size: 24px;
+  color: #383838;
+  top: 24%;
+}
+.button_sign {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #3077c6;
+  border-radius: 8px;
+  font-family: Roboto, sans-serif;
+  color: #3077c6;
+  font-size: 18px;
+  height: 25%;
+  width: 12%;
+  top: 54%;
+}
+.vector {
+  position: absolute;
+  left: 95%;
+  top: 10%;
+}
+/*Guests reviews styles*/
+.reviews {
+  height: max-content;
+}
+.reviews_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.reviews_content_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.reviews_items {
+  height: max-content;
+  background-color: #eaf0f9;
+  position: relative;
+  padding-bottom: 8%;
+}
+.reviews_photo {
+  position: relative;
+  width: 100%;
+}
+.not_view_reviews {
+  display: none;
+}
+.more_reviews {
+  position: absolute;
+  cursor: pointer;
+  top: 20%;
+  left: 93%;
+  width: 15%;
+}
+.price {
+  padding: 16px 0 12px 24px;
+  position: absolute;
+  background-color: rgba(56, 56, 56, 0.7);
+  transform: translateY(-105%);
+  width: 94%;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+.block_reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  height: 380px;
+}
+.place_information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.hotel_information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popularity_hotel {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  margin-right: 24px;
+}
+.hotel_reviews {
+  padding: 24px 24px 16px;
+}
+.hotel_reviews_links {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #3077c6;
+}
+.location_reviews {
+  padding-left: 24px;
+}
+.location_reviews_links {
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  color: #3077c6;
+  font-weight: 400;
+  font-size: 18px;
+}
+.button_rating {
+  display: flex;
+  justify-content: right;
+}
+.rating {
+  margin: 24px 0 8px 0;
+  width: 48px;
+  height: 32px;
+  background-color: #10367c;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  border: none;
+}
+.number_reviews {
+  color: #bfbfbf;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+.person {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 24px;
+}
+.person_icon {
+  display: flex;
+  flex-direction: row;
+  padding: 0 22px 22px 29px;
+}
+.person_data {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding-top: 10px;
+}
+.user_reviews {
+  width: 100%;
+}
+.reviews_name {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+}
+.reviews_places {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #bfbfbf;
+  padding-top: 5px;
+}
+.country {
+  width: 15%;
+  padding-right: 5px;
+}
+.review {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #383838;
+}
 /*Footer styles*/
 .footer {
   background-color: #10367c;
+  width: 100%;
 }
 .footer_menu {
   display: flex;
@@ -347,12 +620,59 @@ figcaption {
 .footer_logo {
   display: none;
 }
+@media screen and (max-width: 985px) {
+  .more {
+    top: 25%;
+  }
+  .more_reviews {
+    top: 15%;
+  }
+  .hotel_reviews_links {
+    font-size: 12px;
+  }
+  .location_reviews_links {
+    font-size: 12px;
+  }
+  .rating {
+    font-size: 14px;
+  }
+  .number_reviews {
+    font-size: 10px;
+  }
+  .reviews_name {
+    font-size: 14px;
+  }
+  .reviews_places {
+    font-size: 14px;
+  }
+  .review {
+    font-size: 13px;
+  }
+  .price {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .book_now {
+    font-size: 14px;
+  }
+  .change_items {
+    font-size: 20px;
+  }
+  .sign_text {
+    font-size: 18px;
+  }
+  .button_sign {
+    font-size: 14px;
+  }
+  .price {
+    width: 89%;
+  }
+}
 @media screen and (max-width: 768px) {
   .container {
     padding-left: 30px;
-  }
-  .hotel {
-    height: 740px;
+    padding-right: 30px;
   }
   .hotel_links {
     font-size: 18px;
@@ -381,6 +701,21 @@ figcaption {
   .text_offer {
     font-size: 20px;
   }
+  .review {
+    font-size: 12px;
+  }
+  .number_reviews {
+    font-size: 8px;
+  }
+  .location_reviews_links {
+    font-size: 10px;
+  }
+  .price {
+    width: 90%;
+  }
+  .more_reviews {
+    top: 15%;
+  }
   .footer_menu {
     padding-top: 0;
     padding-left: 0;
@@ -390,9 +725,6 @@ figcaption {
   .images {
     width: 80px;
     height: 80px;
-  }
-  .hotel {
-    height: 640px;
   }
   .text_offer {
     padding-top: 30px;
@@ -411,9 +743,42 @@ figcaption {
   .location {
     font-size: 14px;
   }
-  figcaption {
+  .price {
+    width: 87%;
+  }
+  .name_hotel {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+  .book_now {
+    font-size: 10px;
+  }
+  .change_items {
+    font-size: 16px;
+  }
+  .sign_text {
+    font-size: 14px;
+  }
+  .reviews_name {
+    font-size: 12px;
+  }
+  .review {
+    font-size: 11px;
+  }
+  .hotel_reviews_links {
+    font-size: 12px;
+  }
+  .location_reviews_links {
+    font-size: 12px;
+  }
+  .reviews_places {
+    font-size: 12px;
+  }
+  .button_sign {
+    font-size: 12px;
+  }
+  .vector {
+    width: 4%;
   }
   .footer_elements {
     padding-top: 30px;
@@ -424,12 +789,10 @@ figcaption {
   }
 }
 @media screen and (max-width: 500px) {
-  .container {
-    padding-left: 30px;
-  }
-  hr {
+  .line {
     width: 60px;
-    margin-top: 15px;
+    margin-top: 50px;
+    margin-left: 35%;
   }
   .invisible {
     display: none;
@@ -440,6 +803,26 @@ figcaption {
   .not_view_more {
     display: flex;
   }
+  .not_view_reviews {
+    display: inline-block;
+  }
+  .reviews {
+    background-color: #eaf0f9;
+  }
+  .hotel_reviews_links,
+  .location_reviews_links,
+  .reviews_name,
+  .country,
+  .rating,
+  .review {
+    font-size: 15px;
+  }
+  .number_reviews {
+    font-size: 11px;
+  }
+  .change_items {
+    margin-right: 20px;
+  }
   .title {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -449,16 +832,41 @@ figcaption {
     padding-top: 32px;
     padding-left: 8px;
   }
-  .hotel {
-    height: 440px;
+  .block_reviews {
+    height: max-content;
   }
-  figcaption {
+  .name_hotel {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .country {
+    top: 34%;
+  }
+  .change {
+    margin-right: 1vw;
+    height: 42px;
+    background-color: #ffffff;
+  }
+  .change_items {
+    background-color: #ffffff;
+    border: 1px solid #f3f3f4;
+    font-size: 19px;
+    border-radius: 4px;
+  }
+  .regions {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .regions_for_visit {
+    padding-bottom: 60px;
+  }
+  .interest {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
   .footer_elements {
     flex-direction: column;
-    padding-left: 0;
+    padding-left: 10px;
     padding-top: 0;
   }
   .footer_logo {
@@ -475,7 +883,7 @@ figcaption {
   .footer_menu {
     display: flex;
     flex-direction: row;
-    padding: 0 44px 32px;
+    cursor: pointer;
   }
   .about_items,
   .property_types_items,
@@ -485,9 +893,46 @@ figcaption {
   }
   .label {
     padding-bottom: 40px;
-    padding-left: 50px;
+    padding-left: 30px;
   }
   .label_items {
+    font-size: 12px;
+  }
+  .ellipse {
+    padding-left: 45%;
+    padding-bottom: 20%;
+  }
+  .sign_up_adaptive {
+    position: relative;
+    height: 106px;
+  }
+  .vector_adaptive {
+    position: absolute;
+    padding-top: 10%;
+  }
+  .sign_logo {
+    width: 20%;
+    margin-left: 15%;
+    margin-top: 6%;
+    background-color: #3077c6;
+    fill: #ffffff;
+    border-radius: 4px;
+    height: 58px;
+  }
+  .sign_text_adaptive {
+    position: absolute;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    color: #383838;
+    left: 40%;
+    top: 35%;
+  }
+  .install {
+    position: absolute;
+    left: 85%;
+    top: 42%;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
     font-size: 12px;
   }
 }
@@ -510,18 +955,15 @@ figcaption {
   }
   .wrapper {
     padding-bottom: 20px;
-    padding-top: 20px;
   }
-  hr {
-    width: 60px;
-    height: 2px;
-    margin-top: 15px;
+  .line {
+    display: none;
   }
   .text {
     padding-top: 40px;
     font-size: 28px;
   }
-  figcaption {
+  .name_hotel {
     padding-top: 8px;
     padding-bottom: 4px;
   }
@@ -535,28 +977,29 @@ figcaption {
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .col-1 {
-    width: 35%;
-  }
-  .col-2 {
-    width: 20%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 20%;
-  }
-  .col-5 {
-    width: 25%;
-  }
-  .col-6 {
-    width: 33%;
-  }
-  .col-7 {
-    width: 25%;
-  }
+.col-1 {
+  width: 35%;
+}
+.col-2 {
+  width: 20%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 20%;
+}
+.col-5 {
+  width: 25%;
+}
+.col-6 {
+  width: 33%;
+}
+.col-7 {
+  width: 25%;
+}
+.col-8 {
+  width: 33%;
 }
 @media only screen and (max-width: 768px) {
   .col-1-s {
@@ -581,6 +1024,9 @@ figcaption {
 @media only screen and (max-width: 500px) {
   .col-7 {
     width: 60%;
+  }
+  .col-8 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 360px) {
