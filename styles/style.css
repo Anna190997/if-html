@@ -465,7 +465,7 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: normal;
- height: 380px;
+  height: 380px;
 }
 .place_information {
   display: flex;
@@ -571,7 +571,7 @@ label {
 /*Footer styles*/
 .footer {
   background-color: #10367c;
-    width: 100%;
+  width: 100%;
 }
 .footer_menu {
   display: flex;
@@ -646,7 +646,7 @@ label {
     font-size: 14px;
   }
   .review {
-    font-size: 16px;
+    font-size: 13px;
   }
   .price {
     width: 90%;
@@ -761,6 +761,9 @@ label {
   }
   .reviews_name {
     font-size: 12px;
+  }
+  .review {
+    font-size: 11px;
   }
   .hotel_reviews_links {
     font-size: 12px;
@@ -960,7 +963,7 @@ label {
     padding-top: 40px;
     font-size: 28px;
   }
- .name_hotel {
+  .name_hotel {
     padding-top: 8px;
     padding-bottom: 4px;
   }
@@ -974,28 +977,29 @@ label {
     font-size: 12px;
   }
 }
-@media only screen and (min-width: 768px) {
-  .col-1 {
-    width: 35%;
-  }
-  .col-2 {
-    width: 20%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 20%;
-  }
-  .col-5 {
-    width: 25%;
-  }
-  .col-6 {
-    width: 33%;
-  }
-  .col-7 {
-    width: 25%;
-  }
+.col-1 {
+  width: 35%;
+}
+.col-2 {
+  width: 20%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 20%;
+}
+.col-5 {
+  width: 25%;
+}
+.col-6 {
+  width: 33%;
+}
+.col-7 {
+  width: 25%;
+}
+.col-8 {
+  width: 33%;
 }
 @media only screen and (max-width: 768px) {
   .col-1-s {
@@ -1020,6 +1024,9 @@ label {
 @media only screen and (max-width: 500px) {
   .col-7 {
     width: 60%;
+  }
+  .col-8 {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 360px) {
