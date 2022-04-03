@@ -138,7 +138,7 @@ header {
 }
 .glass {
   position: absolute;
-  padding: 16px;
+  padding: 18px;
 }
 .destination_adaptive {
   width: 100%;
@@ -153,13 +153,13 @@ header {
 }
 .start,
 .end {
-  width: 47%;
+  width: 49%;
   height: 48px;
   border: none;
   border-radius: 4px;
 }
 .start {
-  margin-right: 12px;
+  margin-right: 1%;
 }
 .number_guests {
   display: flex;
@@ -171,14 +171,14 @@ header {
 .adults,
 .children,
 .rooms {
-  width: 33%;
+  width: 34%;
   height: 48px;
   border: none;
 }
 .adults::placeholder,
 .children::placeholder,
 .rooms::placeholder {
-  padding-top: 28%;
+  padding-top: 18%;
 }
 .adults {
   border-top-left-radius: 4px;
@@ -190,7 +190,7 @@ header {
 }
 .destination_adaptive::placeholder {
   padding-left: 36px;
-  padding-top: 15px;
+  padding-top: 17px;
 }
 .label_adaptive_form {
   position: absolute;
@@ -954,7 +954,7 @@ input:focus {
     font-size: 15px;
     font-weight: bold;
     padding-left: 5%;
-    padding-top: 18%;
+    padding-top: 13%;
   }
   input:hover {
     border: none;
@@ -1131,7 +1131,20 @@ input:focus {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 465px) {
+  .start {
+    margin-right: 0.5%;
+  }
+}
 @media screen and (max-width: 360px) {
+  ::placeholder {
+    padding-top: 18%;
+  }
+  .adults::placeholder,
+  .children::placeholder,
+  .rooms::placeholder {
+    padding-top: 28%;
+  }
   .container {
     padding-left: 20px;
   }
@@ -1170,6 +1183,11 @@ input:focus {
   }
   .location {
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .start {
+    margin-right: 0.2%;
   }
 }
 .col-1 {
